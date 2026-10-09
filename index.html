@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Piechart Studios</title>
+  <meta name="description" content="Apps and games made in Melbourne by David Slee: Breathe Easy Aviary, Spell Runner and Go First.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Piechart Studios">
+  <meta property="og:description" content="Apps and games made in Melbourne by David Slee.">
+  <meta property="og:image" content="https://piechartstudios.com/breathe-easy-aviary.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="breathe-easy-aviary.png">
+  <link rel="apple-touch-icon" href="breathe-easy-aviary.png">
+
+  <style>
+    /* One column, read top to bottom: who, the projects, how to get in touch. */
+    :root {
+      color-scheme: light dark;
+      --bg: #FFFFFF;
+      --bg-element: #F4F4F4;
+      --border: #E5E7EB;
+      --text: #111111;
+      --text-secondary: #5F6673;
+      --link: #2563EB;
+      --tile: #152A63;
+      --tile-text: #FFFFFF;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0D1117;
+        --bg-element: #1C212B;
+        --border: #2A3140;
+        --text: #FFFFFF;
+        --text-secondary: #9BA3AF;
+        --link: #7AA7FF;
+        --tile: #2B4A9E;
+        --tile-text: #FFFFFF;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Segoe UI", Roboto, sans-serif;
+    }
+    a { color: var(--link); text-underline-offset: 2px; }
+    a:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; border-radius: 4px; }
+    main { max-width: 680px; margin: 0 auto; padding: 0 20px; }
+
+    header { padding: 72px 0 40px; }
+    .mark { width: 88px; height: 88px; border-radius: 20px; display: block; box-shadow: 0 8px 24px rgba(17,17,17,.12); }
+    h1 { font-size: clamp(36px, 8vw, 52px); line-height: 1.08; letter-spacing: -0.02em; margin: 28px 0 12px; }
+    .lede { font-size: 20px; color: var(--text-secondary); margin: 0; max-width: 30em; text-wrap: balance; }
+
+    h2 { font-size: 14px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--text-secondary); margin: 0 0 14px; }
+    .projects { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+    .project { display: flex; gap: 18px; align-items: flex-start; background: var(--bg-element); border-radius: 18px; padding: 20px; }
+    .project img, .project .tile { width: 64px; height: 64px; border-radius: 14px; flex-shrink: 0; }
+    .project .tile {
+      display: flex; align-items: center; justify-content: center;
+      background: var(--tile); color: var(--tile-text);
+      font: 700 22px/1 ui-monospace, "SF Mono", Menlo, Consolas, monospace; letter-spacing: .04em;
+    }
+    .project div { min-width: 0; }
+    .project h3 { font-size: 20px; line-height: 1.25; margin: 0 0 4px; }
+    .project p { margin: 0; color: var(--text-secondary); }
+    .project .links { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px 18px; font-weight: 500; color: var(--text); }
+    .soon { font-size: 12px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--text-secondary); margin-left: 8px; white-space: nowrap; }
+
+    footer { margin-top: 48px; border-top: 1px solid var(--border); padding: 28px 0 56px; color: var(--text-secondary); font-size: 15px; }
+    footer nav { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-bottom: 14px; font-size: 17px; }
+    footer p { margin: 0 0 8px; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <img class="mark" src="breathe-easy-aviary.png" alt="" width="88" height="88">
+    <h1>Piechart Studios</h1>
+    <p class="lede">Apps and games made in Melbourne by David Slee.</p>
+  </header>
+
+  <section>
+    <h2>Projects</h2>
+    <ul class="projects">
+      <li class="project">
+        <img src="breathe-easy-aviary.png" alt="" width="64" height="64">
+        <div>
+          <h3>Breathe Easy Aviary</h3>
+          <p>Guided breathing for iPhone, with a calm voice and seven Australian birds. Free on the App Store.</p>
+          <p class="links">
+            <!-- Campaign link (ct=studio-site), so downloads from this page show separately in App Store Connect. -->
+            <a href="https://apps.apple.com/app/apple-store/id6806774681?pt=129380591&amp;ct=studio-site&amp;mt=8">App Store</a>
+            <a href="https://breathe.piechartstudios.com/">Website</a>
+          </p>
+        </div>
+      </li>
+
+      <li class="project">
+        <span class="tile" aria-hidden="true">SR</span>
+        <div>
+          <h3>Spell Runner</h3>
+          <p>A typing game for the browser, in the style of late-1980s console games. It needs a computer with a keyboard.</p>
+          <p class="links">
+            <a href="https://piechart1.github.io/spell-runner/">Play in your browser</a>
+            <a href="https://piechart1.itch.io/spell-runner">itch.io</a>
+          </p>
+        </div>
+      </li>
+
+      <li class="project">
+        <img src="go-first.png" alt="" width="64" height="64">
+        <div>
+          <h3>Go First<span class="soon">Coming soon</span></h3>
+          <p>An iPhone app that helps you build social confidence one small step at a time.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <nav>
+      <a href="mailto:hello@piechartstudios.com">hello@piechartstudios.com</a>
+      <a href="https://www.youtube.com/channel/UCfJ2QTwvze7sAhlDvJbZSuw">YouTube</a>
+      <a href="https://www.tiktok.com/@piechartstudios">TikTok</a>
+    </nav>
+    <p>© 2026 David Philip Slee. Apple, iPhone and App Store are trademarks of Apple Inc.</p>
+  </footer>
+</main>
+</body>
+</html>
